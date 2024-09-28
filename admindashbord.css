@@ -1,0 +1,124 @@
+body {
+	margin: 0; 
+	padding: 0;
+	font-family: montserrat;
+	background-color:#00274a  ;
+	/* to ensure that the footer is always at the bottom */
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.admin-dashboard h2 {
+    font-size: 50px; /* Adjust font size */
+    color: #ffffff; /* Adjust font color */
+}
+.admin-dashboard h4 {
+    font-size: 30px; /* Adjust font size */
+    color: #ffe520; /* Adjust font color */
+}
+.admin-dashboard {
+    padding-top: 9cm;
+    width: 700px; /* Adjust width as needed */
+    margin: auto; /* Center horizontally */
+    text-align: center; /* Center contents */
+    padding: 60px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1cm;
+}
+
+.admin-dashboard form {
+    /* margin-bottom: 20px;  */
+    border: 1px solid #fffb20;
+    border-radius: 20px;
+    width: 700px;
+    height:100px;
+    text-align: center;
+    margin: auto;
+    padding-top: 1cm;
+
+}
+.form-group {
+
+    margin-right: 50px; /* Adjust as needed for spacing between button and inputs */
+    margin-left: 50px; /* Adjust as needed for spacing between button and inputs */
+
+}
+.form-group button {
+    margin-right: 10px; /* Adjust as needed for spacing between button and inputs */
+}
+
+.footer {
+    margin-top: 10cm;
+    padding: 40px 0;
+	margin-top: auto;
+}
+.item {
+    color: #fff;
+    text-align: center;
+}
+.item a {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 1rem;
+    opacity: 0.8;
+    line-height: 38px;
+    font-size: 1.4rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1.4px solid #ccc;
+}
+.item a:hover {
+	scale: 1 1;
+	opacity: 1;
+  }  
+.icon {
+	transition: 0.5s ease;
+	z-index: 2;
+  } 
+
+.item a:hover .icon {
+	color: #fff;
+	transform: rotateY(360deg);
+	
+  }
+
+.list {
+    padding: 0;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    list-style: none;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.list a {
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+}
+
+.list li {
+    padding: 0 15px;
+    display: inline-block;
+}
+
+.list a:hover {
+    opacity: 1;
+}
+
+
+.copyright {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(181, 175, 175);
+}
+

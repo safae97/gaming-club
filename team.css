@@ -1,0 +1,245 @@
+.header {
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+body {
+	margin: 0; 
+	padding: 0;
+	font-family: montserrat;
+	background-color:#00274a ;
+	/* to ensure that the footer is always at the bottom */
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	 display: flex; 
+	justify-content: space-between;
+	 align-items: center; 
+	padding: 5px  ;
+    background: #00274a; 
+	padding-bottom: 10px;
+
+	
+}
+ .logo {
+  cursor: pointer;
+  left: 47%;
+	right:50%;
+    margin-top: 0;
+    padding-top: 0;
+    position: fixed;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: all .1s ease-in-out;
+    z-index: 1001;
+	width: 60px;
+    height: 60px;
+	vertical-align: middle;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+	justify-content: space-between;
+}
+.menu ul li {
+    margin-top:0.5cm;
+	display: inline-block;
+    margin:14px;  /* distance between them  */
+   margin-top:0.3cm; /*distance between top and them */
+}
+.menu ul li a {
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: montserrat;
+	color: #fff;
+	padding: 10px 40px;
+}
+
+.menu {
+    left:50%;
+    right:50%;
+	/* padding-left : 1px;
+	padding-right : 1px; */
+	list-style: none;
+	/* margin-left:1 cm;
+	margin-right:1 cm; */
+}
+.menu ul li a:hover{
+    background:#0e85ed;
+}
+
+.team-section {
+    margin-top: 100px;
+
+}
+
+.team-title h2 {
+    
+    color:#fff;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 30px;
+    
+}
+
+.team-cards {
+    cursor: pointer;
+
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+    flex-wrap: wrap; /* Permet aux éléments de revenir à la ligne si nécessaire */
+}
+
+.team-card {
+    background-color: #1a63a2;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0px 10px 30px 10px; /* Espacement autour de chaque carte */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.6s ease;
+    width: 180px; /* Utilise un tiers de la largeur du conteneur parent et ajoute un espacement */
+    height: 400px;
+    flex-basis: calc(33.33% - 40px);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+.team-card:hover {
+    transform: translate(-12px);
+}
+
+.team-imge img {
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-detail h5 {
+    color: #fff;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+.team-detail h4 {
+    color:#eec120;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+.team-detail p {
+    color: blanchedalmond;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 992px) {
+    .team-card {
+        flex-basis: calc(50% - 40px);/* Deux cartes par ligne avec un espacement */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team-card {
+         /* Une carte par ligne avec un espacement */
+        flex-basis: calc(100% - 40px);
+    }
+}
+.card {
+    justify-content: center; /* Centrer les cartes sur la ligne */
+    margin: 30px auto 0; /* Ajoute une marge en haut pour centrer verticalement les cartes */
+}
+
+.card .team-card {
+    margin: 0 0.5px; /* Réduire l'espace autour des cartes */
+    width: 220px; /* Réduit la largeur des cartes */
+}
+
+
+
+.footer {
+    padding: 40px 0;
+	margin-top: 15cm;
+}
+.item {
+    color: #fff;
+    text-align: center;
+}
+.item a {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 1rem;
+    opacity: 0.8;
+    line-height: 38px;
+    font-size: 1.4rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1.4px solid #ccc;
+}
+.item a:hover {
+	scale: 1 1;
+	opacity: 1;
+  }  
+.icon {
+	transition: 0.5s ease;
+	z-index: 2;
+  } 
+
+.item a:hover .icon {
+	color: #fff;
+	transform: rotateY(360deg);
+	
+  }
+
+.list {
+    padding: 0;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    list-style: none;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.list a {
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+}
+
+.list li {
+    padding: 0 15px;
+    display: inline-block;
+}
+
+.list a:hover {
+    opacity: 1;
+}
+
+
+.copyright {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(181, 175, 175);
+}
+
+
